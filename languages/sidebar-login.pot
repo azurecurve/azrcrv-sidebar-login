@@ -1,0 +1,204 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sidebar Login\n"
+"POT-Creation-Date: 2019-03-09 14:23+0000\n"
+"PO-Revision-Date: 2019-03-02 19:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: azrcrv-sidebar-login.php\n"
+"X-Poedit-SearchPath-1: includes/class-sidebar-login-widget.php\n"
+
+#: azrcrv-sidebar-login.php:54
+msgid "Settings"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:70
+msgid "Sidebar Login Settings"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:71 includes/class-sidebar-login-widget.php:23
+msgid "Sidebar Login"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:86
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: azrcrv-sidebar-login.php:98
+msgid ""
+"Sidebar Login adds a useful login widget which can be used to login from in "
+"the sidebar of your ClassicPress powered blog; once a user logs in they are "
+"redirected back to the page they logged in from rather than the admin panel "
+"(this is configurable)."
+msgstr ""
+
+#: azrcrv-sidebar-login.php:99
+msgid ""
+"The following tags can be used in the widget settings for titles and links "
+"and will be replaced at runtime:"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:101
+msgid "logged in users display name"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:102
+msgid "logged in users ID"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:103
+msgid "logged in users firstname"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:104
+msgid "logged in users lastname"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:105
+msgid "logged in users firstname and lastname"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:106
+msgid "user's avatar"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:107
+msgid "logout url"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:108
+msgid "url to WP admin"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:177
+msgid "Please enter your username"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:178
+msgid "Please enter your password"
+msgstr ""
+
+#: azrcrv-sidebar-login.php:276
+msgid "Please enter your username and password to login."
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:20
+msgid "Displays a login area in the sidebar."
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:33
+msgid "Logged-out title"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:34
+#: includes/class-sidebar-login-widget.php:236
+msgid "Login"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:38
+#: includes/class-sidebar-login-widget.php:73
+msgid "Links"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:38
+msgid "Text | HREF"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:43
+msgid "Show lost password link"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:48
+msgid "Show register link"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:50
+#, php-format
+msgid "<a href=\"%s\">Anyone can register</a> must be enabled."
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:54
+msgid "Show \"Remember me\" checkbox"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:59
+msgid "Login Redirect URL"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:62
+#: includes/class-sidebar-login-widget.php:92
+msgid "Current page URL"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:68
+msgid "Logged-in title"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:69
+#: includes/class-sidebar-login-widget.php:235
+msgid "Welcome %username%"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:73
+msgid "Text | HREF | Capability"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:74
+#, php-format
+msgid ""
+"<a href=\"%s\">Capability</a> (optional) refers to the type of user who can "
+"view the link."
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:75
+msgid ""
+"Dashboard | %admin_url%\n"
+"Profile | %admin_url%/profile.php\n"
+"Logout | %logout_url%"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:79
+msgid "Show logged-in user avatar"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:84
+msgid "Set avatar size"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:89
+msgid "Logout Redirect URL"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:174
+#: includes/class-sidebar-login-widget.php:181
+msgid "Register"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:191
+msgid "Lost Password"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:287
+msgid "Username"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:288
+msgid "Password"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:289
+msgid "Remember Me"
+msgstr ""
+
+#: includes/class-sidebar-login-widget.php:290
+msgid "Login &rarr;"
+msgstr ""

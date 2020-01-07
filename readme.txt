@@ -37,6 +37,9 @@ To install the Sidebar Login plugin:
 
 == Changelog ==
 Changes and feature additions for the Sidebar Login plugin:
+= 1.0.1 =
+* Update azurecurve menu for easier maintenance.
+* Move require of azurecurve menu below security check.
 = 1.0.0 =
 * First version forked from [Sidebar Login by Mike Jolley](https://wordpress.org/plugins/sidebar-login).
 * Add option to change size of avatar.

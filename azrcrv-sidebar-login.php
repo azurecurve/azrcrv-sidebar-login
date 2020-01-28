@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Sidebar Login
  * Description: Login via AJAX enabled sidebar widget.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/sidebar-login/
@@ -24,6 +24,10 @@ if (!defined('ABSPATH')){
 
 // include plugin menu
 require_once(dirname( __FILE__).'/pluginmenu/menu.php');
+register_activation_hook(__FILE__, 'azrcrv_create_plugin_menu_sl');
+
+// include update client
+require_once(dirname(__FILE__).'/libraries/updateclient/UpdateClient.class.php');
 
 /**
  * Setup actions, filters and shortcodes.
@@ -33,9 +37,21 @@ require_once(dirname( __FILE__).'/pluginmenu/menu.php');
  */
 // add actions
 add_action('admin_menu', 'azrcrv_sl_create_admin_menu');
+add_action('plugins_loaded', 'azrcrv_sl_load_languages');
 
 // add filters
 add_filter('plugin_action_links', 'azrcrv_sl_add_plugin_action_link', 10, 2);
+
+/**
+ * Load language files.
+ *
+ * @since 1.0.0
+ *
+ */
+function azrcrv_sl_load_languages() {
+    $plugin_rel_path = basename(dirname(__FILE__)).'/languages';
+    load_plugin_textdomain('azrcrv-sl', false, $plugin_rel_path);
+}
 
 /**
  * Add action link on plugins page.
@@ -91,7 +107,7 @@ function azrcrv_sl_settings(){
 	?>
 	
 	<div id="azrcrv-sl-general" class="wrap">
-		<h2><?php echo esc_html(get_admin_page_title()); ?></h2>
+		<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
 		<label for="explanation">
 			<span id="explanation">

@@ -37,21 +37,9 @@ require_once(dirname(__FILE__).'/libraries/updateclient/UpdateClient.class.php')
  */
 // add actions
 add_action('admin_menu', 'azrcrv_sl_create_admin_menu');
-add_action('plugins_loaded', 'azrcrv_sl_load_languages');
 
 // add filters
 add_filter('plugin_action_links', 'azrcrv_sl_add_plugin_action_link', 10, 2);
-
-/**
- * Load language files.
- *
- * @since 1.0.0
- *
- */
-function azrcrv_sl_load_languages() {
-    $plugin_rel_path = basename(dirname(__FILE__)).'/languages';
-    load_plugin_textdomain('azrcrv-sl', false, $plugin_rel_path);
-}
 
 /**
  * Add action link on plugins page.

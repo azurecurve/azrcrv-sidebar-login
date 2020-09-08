@@ -1,12 +1,12 @@
 === Sidebar Login ===
 
 Description:	Login via AJAX enabled sidebar widget.
-Version:		1.1.4
+Version:		1.1.5
 Tags:			login, sidebar, widget, sidebar login, meta, form, register
 Author:			azurecurve
 Author URI:		https://development.azurecurve.co.uk/
 Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/sidebar-login/
-Download link:	https://github.com/azurecurve/azrcrv-sidebar-login/releases/download/v1.1.4/azrcrv-sidebar-login.zip
+Download link:	https://github.com/azurecurve/azrcrv-sidebar-login/releases/download/v1.1.5/azrcrv-sidebar-login.zip
 Donate link:	https://development.azurecurve.co.uk/support-development/
 Requires PHP:	5.6
 Requires:		1.0.0
@@ -60,6 +60,9 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 == Changelog ==
 
 # Changelog
+
+### [Version 1.1.5](https://github.com/azurecurve/azrcrv-sidebar-login/releases/tag/v1.1.5)
+ * Fix bug with sidebar widget links array.
 
 ### [Version 1.1.4](https://github.com/azurecurve/azrcrv-sidebar-login/releases/tag/v1.1.4)
  * Fix bug with plugin menu.

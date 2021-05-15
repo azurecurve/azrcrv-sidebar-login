@@ -17,10 +17,10 @@ class Sidebar_Login_Widget extends WP_Widget {
      */
     public function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'description' => __( 'Displays a login area in the sidebar.', 'sidebar-login' ) );
+		$widget_ops = array( 'description' => esc_html__( 'Displays a login area in the sidebar.', 'sidebar-login' ) );
 
 		/* Create the widget. */
-		parent::__construct( 'wp_sidebarlogin', __( 'Sidebar Login', 'sidebar-login' ), $widget_ops );
+		parent::__construct( 'wp_sidebarlogin', esc_html__( 'Sidebar Login', 'sidebar-login' ), $widget_ops );
     }
 
     /**
@@ -30,66 +30,66 @@ class Sidebar_Login_Widget extends WP_Widget {
 	    // Define options for widget
 		$this->options       = array(
 			'logged_out_title' => array(
-				'label'           => __( 'Logged-out title', 'sidebar-login' ),
-				'default'         => __( 'Login', 'sidebar-login' ),
+				'label'           => esc_html__( 'Logged-out title', 'sidebar-login' ),
+				'default'         => esc_html__( 'Login', 'sidebar-login' ),
 				'type'            => 'text'
 			),
 			'logged_out_links'  => array(
-				'label'           => __( 'Links', 'sidebar-login' ) . ' (<code>' . __( 'Text | HREF', 'sidebar-login' ) . '</code>)',
+				'label'           => esc_html__( 'Links', 'sidebar-login' ) . ' (<code>' . esc_html__( 'Text | HREF', 'sidebar-login' ) . '</code>)',
 				'default'         => '',
 				'type'            => 'textarea'
 			),
 			'show_lost_password_link'  => array(
-				'label'           => __( 'Show lost password link', 'sidebar-login' ),
+				'label'           => esc_html__( 'Show lost password link', 'sidebar-login' ),
 				'default'         => 1,
 				'type'            => 'checkbox'
 			),
 			'show_register_link'  => array(
-				'label'           => __( 'Show register link', 'sidebar-login' ),
+				'label'           => esc_html__( 'Show register link', 'sidebar-login' ),
 				'default'         => 1,
-				'description'     => sprintf( __( '<a href="%s">Anyone can register</a> must be enabled.', 'sidebar-login' ), admin_url('options-general.php') ),
+				'description'     => sprintf( esc_html__( '<a href="%s">Anyone can register</a> must be enabled.', 'sidebar-login' ), admin_url('options-general.php') ),
 				'type'            => 'checkbox'
 			),
 			'show_rememberme'  => array(
-				'label'           => __( 'Show "Remember me" checkbox', 'sidebar-login' ),
+				'label'           => esc_html__( 'Show "Remember me" checkbox', 'sidebar-login' ),
 				'default'         => 1,
 				'type'            => 'checkbox'
 			),
 			'login_redirect_url'  => array(
-				'label'           => __( 'Login Redirect URL', 'sidebar-login' ),
+				'label'           => esc_html__( 'Login Redirect URL', 'sidebar-login' ),
 				'default'         => '',
 				'type'            => 'text',
-				'placeholder'     => __( 'Current page URL', 'sidebar-login' )
+				'placeholder'     => esc_html__( 'Current page URL', 'sidebar-login' )
 			),
 			'break-1'           => array(
 				'type'            => 'break'
 			),
 			'logged_in_title'  => array(
-				'label'           => __( 'Logged-in title', 'sidebar-login' ),
-				'default'         => __( 'Welcome %username%', 'sidebar-login' ),
+				'label'           => esc_html__( 'Logged-in title', 'sidebar-login' ),
+				'default'         => esc_html__( 'Welcome %username%', 'sidebar-login' ),
 				'type'            => 'text'
 			),
 			'logged_in_links'  => array(
-				'label'           => __( 'Links', 'sidebar-login' ) . ' (<code>' . __( 'Text | HREF | Capability', 'sidebar-login' ) . '</code>)',
-				'description'     => sprintf( __( '<a href="%s">Capability</a> (optional) refers to the type of user who can view the link.', 'sidebar-login' ), 'http://codex.wordpress.org/Roles_and_Capabilities' ),
-				'default'         => __( "Dashboard | %admin_url%\nProfile | %admin_url%/profile.php\nLogout | %logout_url%", 'sidebar-login' ),
+				'label'           => esc_html__( 'Links', 'sidebar-login' ) . ' (<code>' . esc_html__( 'Text | HREF | Capability', 'sidebar-login' ) . '</code>)',
+				'description'     => sprintf( esc_html__( '<a href="%s">Capability</a> (optional) refers to the type of user who can view the link.', 'sidebar-login' ), 'http://codex.wordpress.org/Roles_and_Capabilities' ),
+				'default'         => esc_html__( "Dashboard | %admin_url%\nProfile | %admin_url%/profile.php\nLogout | %logout_url%", 'sidebar-login' ),
 				'type'            => 'textarea'
 			),
 			'show_avatar'  => array(
-				'label'           => __( 'Show logged-in user avatar', 'sidebar-login' ),
+				'label'           => esc_html__( 'Show logged-in user avatar', 'sidebar-login' ),
 				'default'         => 1,
 				'type'            => 'checkbox'
 			),
 			'avatar_size'  => array(
-				'label'           => __( 'Set avatar size', 'sidebar-login' ),
+				'label'           => esc_html__( 'Set avatar size', 'sidebar-login' ),
 				'default'         => 100,
 				'type'            => 'text'
 			),
 			'logout_redirect_url'  => array(
-				'label'           => __( 'Logout Redirect URL', 'sidebar-login' ),
+				'label'           => esc_html__( 'Logout Redirect URL', 'sidebar-login' ),
 				'default'         => '',
 				'type'            => 'text',
-				'placeholder'     => __( 'Current page URL', 'sidebar-login' )
+				'placeholder'     => esc_html__( 'Current page URL', 'sidebar-login' )
 			)
 		);
     }
@@ -171,14 +171,14 @@ class Sidebar_Login_Widget extends WP_Widget {
 		    	if ( ! is_multisite() ) {
 
 		    		$links['register'] = array(
-		    			'text' => __( 'Register', 'sidebar-login' ),
+		    			'text' => esc_html__( 'Register', 'sidebar-login' ),
 		    			'href' => apply_filters( 'sidebar_login_widget_register_url', site_url( 'wp-login.php?action=register', 'login' ) )
 		    		);
 
 				} else {
 
 					$links['register'] = array(
-		    			'text' => __( 'Register', 'sidebar-login' ),
+		    			'text' => esc_html__( 'Register', 'sidebar-login' ),
 		    			'href' => apply_filters( 'sidebar_login_widget_register_url', site_url('wp-signup.php', 'login') )
 		    		);
 
@@ -188,7 +188,7 @@ class Sidebar_Login_Widget extends WP_Widget {
 		    if ( ! empty( $this->instance['show_lost_password_link'] ) && $this->instance['show_lost_password_link'] == 1 ) {
 
 		    	$links['lost_password'] = array(
-	    			'text' => __( 'Lost Password', 'sidebar-login' ),
+	    			'text' => esc_html__( 'Lost Password', 'sidebar-login' ),
 	    			'href' => apply_filters( 'sidebar_login_widget_lost_password_url', wp_lostpassword_url() )
 	    		);
 
@@ -232,8 +232,8 @@ class Sidebar_Login_Widget extends WP_Widget {
 		}
 
 		$defaults = array(
-			'logged_in_title'  => ! empty( $instance['logged_in_title'] ) ? $instance['logged_in_title'] : __( 'Welcome %username%', 'sidebar-login' ),
-			'logged_out_title' => ! empty( $instance['logged_out_title'] ) ? $instance['logged_out_title'] : __( 'Login', 'sidebar-login' ),
+			'logged_in_title'  => ! empty( $instance['logged_in_title'] ) ? $instance['logged_in_title'] : esc_html__( 'Welcome %username%', 'sidebar-login' ),
+			'logged_out_title' => ! empty( $instance['logged_out_title'] ) ? $instance['logged_out_title'] : esc_html__( 'Login', 'sidebar-login' ),
 			'show_avatar'      => isset( $instance['show_avatar'] ) ? $instance['show_avatar'] : 1,
 			'avatar_size'      => isset( $instance['avatar_size'] ) ? $instance['avatar_size'] : '100px',
 			'logged_in_links'  => ! empty( $instance['logged_in_links'] ) ? $instance['logged_in_links'] : array(),
@@ -284,10 +284,10 @@ class Sidebar_Login_Widget extends WP_Widget {
 			$login_form_args = apply_filters( 'sidebar_login_widget_form_args', array(
 		        'echo' 				=> false,
 		        'redirect' 			=> esc_url( apply_filters( 'sidebar_login_widget_login_redirect', $redirect ) ),
-		        'label_username' 	=> __( 'Username', 'sidebar-login' ),
-		        'label_password' 	=> __( 'Password', 'sidebar-login' ),
-		        'label_remember' 	=> __( 'Remember Me', 'sidebar-login' ),
-		        'label_log_in' 		=> __( 'Login &rarr;', 'sidebar-login' ),
+		        'label_username' 	=> esc_html__( 'Username', 'sidebar-login' ),
+		        'label_password' 	=> esc_html__( 'Password', 'sidebar-login' ),
+		        'label_remember' 	=> esc_html__( 'Remember Me', 'sidebar-login' ),
+		        'label_log_in' 		=> esc_html__( 'Login &rarr;', 'sidebar-login' ),
 		        'remember' 			=> $show_rememberme,
 		        'value_remember' 	=> true
 		    ) );

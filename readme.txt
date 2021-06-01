@@ -61,7 +61,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # Changelog
 
-### [Version 1.3.0](https://github.com/azurecurve/azrcrv-sidebar-login/releases/tag/v1.3.1)
+### [Version 1.3.1](https://github.com/azurecurve/azrcrv-sidebar-login/releases/tag/v1.3.1)
  * Fix bug in loading ajax_handler omly when required.
  
 ### [Version 1.3.0](https://github.com/azurecurve/azrcrv-sidebar-login/releases/tag/v1.3.0)

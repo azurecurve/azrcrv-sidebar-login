@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Sidebar Login
  * Description: Login via AJAX enabled sidebar widget.
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/sidebar-login/
@@ -171,10 +171,7 @@ class Sidebar_Login {
 		add_action( 'wp_authenticate', array( $this, 'convert_email_to_username' ), 10, 2 );
 
 		// Ajax events
-		if (get_current_user_id() == 0){
-			add_action( 'wp_ajax_sidebar_login_process', array( $this, 'ajax_handler' ) );
-			add_action( 'wp_ajax_nopriv_sidebar_login_process', array( $this, 'ajax_handler' ) );
-		}
+		add_action( 'wp_ajax_nopriv_sidebar_login_process', array( $this, 'ajax_handler' ) );
 	}
 
 	/**

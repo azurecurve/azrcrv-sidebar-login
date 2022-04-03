@@ -2,38 +2,38 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sidebar Login\n"
-"POT-Creation-Date: 2019-03-09 14:23+0000\n"
+"POT-Creation-Date: 2021-12-27 18:16+0000\n"
 "PO-Revision-Date: 2019-03-02 19:40+0000\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: translate@azurecurve.co.uk\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: azrcrv-sidebar-login.php\n"
 "X-Poedit-SearchPath-1: includes/class-sidebar-login-widget.php\n"
 
-#: azrcrv-sidebar-login.php:54
+#: azrcrv-sidebar-login.php:86
 msgid "Settings"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:70
+#: azrcrv-sidebar-login.php:102
 msgid "Sidebar Login Settings"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:71 includes/class-sidebar-login-widget.php:23
+#: azrcrv-sidebar-login.php:103 includes/class-sidebar-login-widget.php:23
 msgid "Sidebar Login"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:86
+#: azrcrv-sidebar-login.php:118
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: azrcrv-sidebar-login.php:98
+#: azrcrv-sidebar-login.php:135
 msgid ""
 "Sidebar Login adds a useful login widget which can be used to login from in "
 "the sidebar of your ClassicPress powered blog; once a user logs in they are "
@@ -41,53 +41,53 @@ msgid ""
 "(this is configurable)."
 msgstr ""
 
-#: azrcrv-sidebar-login.php:99
+#: azrcrv-sidebar-login.php:136
 msgid ""
 "The following tags can be used in the widget settings for titles and links "
 "and will be replaced at runtime:"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:101
+#: azrcrv-sidebar-login.php:138
 msgid "logged in users display name"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:102
+#: azrcrv-sidebar-login.php:139
 msgid "logged in users ID"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:103
+#: azrcrv-sidebar-login.php:140
 msgid "logged in users firstname"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:104
+#: azrcrv-sidebar-login.php:141
 msgid "logged in users lastname"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:105
+#: azrcrv-sidebar-login.php:142
 msgid "logged in users firstname and lastname"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:106
+#: azrcrv-sidebar-login.php:143
 msgid "user's avatar"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:107
+#: azrcrv-sidebar-login.php:144
 msgid "logout url"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:108
+#: azrcrv-sidebar-login.php:145
 msgid "url to WP admin"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:177
+#: azrcrv-sidebar-login.php:213
 msgid "Please enter your username"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:178
+#: azrcrv-sidebar-login.php:214
 msgid "Please enter your password"
 msgstr ""
 
-#: azrcrv-sidebar-login.php:276
+#: azrcrv-sidebar-login.php:312
 msgid "Please enter your username and password to login."
 msgstr ""
 

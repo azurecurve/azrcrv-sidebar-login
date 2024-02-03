@@ -1,14 +1,18 @@
 <?php
 /**
  * ------------------------------------------------------------------------------
- * Plugin Name: Sidebar Login
- * Description: Login via AJAX enabled sidebar widget.
- * Version: 1.3.5
- * Author: azurecurve
- * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
- * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/sidebar-login/
- * Text Domain: sidebar-login
- * Domain Path: /languages
+ * Plugin Name:		Sidebar Login
+ * Description:		Login via AJAX enabled sidebar widget.
+ * Version:			1.3.6
+ * Requires CP:		1.0
+ * Author:			azurecurve
+ * Author URI:		https://development.azurecurve.co.uk/classicpress-plugins/
+ * Plugin URI:		https://development.azurecurve.co.uk/classicpress-plugins/sidebar-login/
+ * Donate link:		https://development.azurecurve.co.uk/support-development/
+ * Text Domain:		sidebar-login
+ * Domain Path:		/languages
+ * License:			GPLv2 or later
+ * License URI:		http://www.gnu.org/licenses/gpl-2.0.html
  * ------------------------------------------------------------------------------
  * This is free software released under the terms of the General Public License,
  * version 3. It is distributed WITHOUT ANY WARRANTY; without even the
